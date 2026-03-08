@@ -22,6 +22,11 @@
 }
 
 /* ---------Style of the send input ---------*/
+.company{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
 .footerSection .send {
     border: #FAFAFA 1.5px solid;
     width: 217px;
@@ -91,8 +96,9 @@
     height: 35px;
     background-color: #ffffff80;
     border-radius: 20px;
-    transition:  0.3s ease-in-out ;
+    transition: 0.3s ease-in-out;
 }
+
 .socialNetwork img:hover {
     background-color: #fff;
     transform: scale(1.2);
@@ -120,3 +126,33 @@ hr {
     justify-content: center;
     align-items: center;
 }
+
+
+/* --------------------- Responsive Design ----------------- */
+
+/* phone  */
+@media(max-width:480px) {
+    .footerSection {}
+
+    .siteMap nav a:hover::after {
+        width: 1000px;
+    }
+
+}
+
+/* tablet  */
+@media(max-width:1024px) {
+    .footerSection {
+        flex-direction: column;
+        height: 900px;
+    }
+    .siteMap nav a:hover::after {
+        width: 25%;
+    }
+}
+
+/* standard desktop */
+@media(max-width:1440px) {}
+
+/* large desktop */
+@media(min-width:1441px) {}

@@ -10,7 +10,7 @@ export default function Footer() {
         <div className={styles.warper}>
             <div className={styles.footerSection}>
 
-                <div className="company">
+                <div className={styles.company}>
                     <h1>DakiMart</h1>
 
                     <p>S'abonner</p>
