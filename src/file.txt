@@ -1,0 +1,100 @@
+.
+├── app
+│   ├── layout.jsx
+│   ├── router.jsx
+│   └── store.js
+├── App.jsx
+├── assets
+│   ├── icons
+│   │   └── searchIcon.png
+│   └── images
+│       └── google-small-image.png
+├── components
+│   ├── Button.jsx
+│   ├── Footer.jsx
+│   ├── Layout.jsx
+│   ├── Links.jsx
+│   ├── Loader.jsx
+│   ├── Modal.jsx
+│   ├── Navbar.jsx
+│   ├── SearchBar.jsx
+│   ├── Sidebar.jsx
+│   └── Toast.jsx
+├── features
+│   ├── admin
+│   │   ├── AdminDashboard.jsx
+│   │   ├── ManageProducts.jsx
+│   │   ├── ManageUsers.jsx
+│   │   └── Statistics.jsx
+│   ├── ai
+│   │   ├── AIChat.jsx
+│   │   ├── AISearchBar.jsx
+│   │   ├── aiService.js
+│   │   ├── aiSlice.js
+│   │   └── ChatMessage.jsx
+│   ├── auth
+│   │   ├── authService.js
+│   │   ├── authSlice.js
+│   │   ├── Login.jsx
+│   │   ├── Profile.jsx
+│   │   ├── ProtectedRoute.jsx
+│   │   ├── RoleRoute.jsx
+│   │   ├── SignUp.jsx
+│   │   └── Sign-up.module.css
+│   ├── cart
+│   │   ├── CartItem.jsx
+│   │   ├── CartPage.jsx
+│   │   ├── cartService.js
+│   │   └── cartSlice.js
+│   ├── orders
+│   │   ├── OrderCard.jsx
+│   │   ├── OrderDetails.jsx
+│   │   ├── orderService.js
+│   │   ├── orderSlice.js
+│   │   └── OrdersPage.jsx
+│   ├── payment
+│   │   ├── CardPaymentForm.jsx
+│   │   ├── CashOnDeliveryInfo.jsx
+│   │   ├── PaymentPage.jsx
+│   │   └── paymentService.js
+│   ├── products
+│   │   ├── CategoryFilter.jsx
+│   │   ├── ProductCard.jsx
+│   │   ├── ProductDetails.jsx
+│   │   ├──  productService.js
+│   │   ├── productService.js
+│   │   ├──  productSlice.js
+│   │   ├── productSlice.js
+│   │   └── ProductsPage.jsx
+│   ├── profile
+│   │   ├── ChangePassword.jsx
+│   │   ├── ProfilePage.jsx
+│   │   └── UpdateProfileForm.jsx
+│   └── seller
+│       ├── ManageSellerProducts.jsx
+│       ├── RequestAdvance.jsx
+│       ├── SellerDashboard.jsx
+│       ├── SellerOrders.jsx
+│       └── SellerStatistics.jsx
+├── file.txt
+├── hooks
+│   ├── useAI.js
+│   ├── useAuth.js
+│   ├── useCart.js
+│   └── useDebounce.js
+├── main.jsx
+├── services
+│   ├── api.js
+│   └── config.js
+├── styles
+│   ├── globals.css
+│   └── index.css
+├── test
+│   └── App.jsx
+└── utils
+    ├── constants.js
+    ├── formatDate.js
+    ├── formatPrice.js
+    └── validateForm.js
+
+21 directories, 77 files

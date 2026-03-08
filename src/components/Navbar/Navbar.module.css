@@ -1,0 +1,216 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+.navBarSection * {
+    font-family: 'Poppins', sans-serif;
+    /* font-weight: 400; */
+    /* Regular style */
+    /* font-size: 16px; */
+
+    /* These properties make the font look more like Figma's renderer */
+    /* -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;*/
+}
+
+
+/* --------------Style of the navbar---------------------*/
+
+.navBarSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    /* gap: 10px; */
+}
+
+.searchIconResponsive {
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    margin: 0;
+}
+
+.warperSearchBar .searchWithIcon {
+    border: 1px solid var(--border-color);
+    display: flex;
+    background: var(--background-input);
+    border-radius: 5px;
+    width: 236px;
+    height: 38px;
+    align-items: center;
+    /* position: relative; */
+
+}
+
+.warperSearchBar .searchWithIcon input {
+    border: none;
+    background: none;
+    flex-grow: 1;
+    font-family: "Popins";
+    padding-left: 20px;
+}
+
+input::placeholder {
+    font-family: "Poppins", sans-serif;
+    padding-left: 0;
+
+}
+
+.warperSearchBar .searchWithIcon input:focus {
+    outline: none;
+    text-align: left;
+}
+
+.searchWithIcon img {
+    width: 25px;
+    height: 25px;
+}
+
+.warperSearchBar .searchWithIcon button {
+    scale: 0.9;
+    transition: 0.3s all ease-in-out;
+}
+
+.warperSearchBar .searchWithIcon button:active {
+    scale: 1.1;
+}
+
+/* -------------------Logo STYLE------------------- */
+
+h1 {
+    font-size: 2em;
+}
+
+
+/* -------------------Upper Navbar STYLE------------------- */
+.upperNavbar {
+    background-color: var(--bg-upper-navbar);
+    color: var(--bg-primary);
+    text-align: center;
+    justify-content: center;
+    word-break: break-all;
+    padding: 30px 12px;
+    margin-left: 0px;
+    position: relative;
+    width: calc(100% + 25px);
+    left: -25px;
+    right: -18px;
+    letter-spacing: 2px;
+}
+
+.upperNavbar span {
+    padding-left: 12px;
+    text-decoration: underline;
+    transition: 0.3s all ease-in-out;
+    display: inline-block;
+    scale: 0.9;
+}
+
+.upperNavbar span:hover {
+    color: var(--text-secondary);
+    cursor: pointer;
+    scale: 1;
+}
+
+.upperNavbar span:active {
+    color: var(--text-secondary);
+    scale: 1.2;
+}
+
+
+
+/* -------------------Links STYLE------------------- */
+
+nav * {
+    font-size: 16px;
+    justify-content: space-between;
+    padding: 20px;
+    color: var(--bg-upper-navbar);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    /* Regular style */
+    font-size: 16px;
+    position: relative;
+
+    /* These properties make the font look more like Figma's renderer */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+nav>* {
+    text-decoration: none;
+}
+
+.link1 {
+    display: none;
+}
+
+/* -------------------- Responsive Design ------------------ */
+
+
+/* tablet  */
+@media(max-width:1024px) {
+    .warperSearchBar .searchWithIcon {
+        display: none;
+
+    }
+
+    .searchIconResponsive {
+        display: flex;
+        /* left: 60%; */
+    }
+
+    nav * {
+        padding: 10px;
+    }
+}
+
+/* phone  */
+@media(max-width:577px) {
+    .upperNavbar {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+    .link2{
+        display: none;
+    }
+
+    .navBarSection {
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .link1 {
+        display: flex;
+        position: absolute;
+        /* padding-left: 5%; */
+        right: 15px;
+        width: 30px;
+        height: 30px;
+        transition: 0.3s all ease-in-out;
+    }
+
+    .link1:active {
+        scale: 1.1;
+    }
+
+    .warperSearchBar {
+        display: none;
+    }
+
+}
+
+
+/* standard desktop */
+@media(max-width:1440px) {}
+
+/* large desktop */
+@media(min-width:1441px) {}

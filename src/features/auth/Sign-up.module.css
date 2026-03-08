@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* STYLE OF THE BODY */
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: "Popins", ;
+    /* font-family: "Playfair Display", serif; */
+    /* font-family: "Inter", sans-serif; */
+    font-optical-sizing: auto;
+    font-style: normal;
+    
+}
+
+
+/* STYLE OF THE SIGN UP PAGE */
+
+.signUpSection {
+    display: flex;
+    gap: 100px;
+    margin-right: 120px;
+
+}
+
+.signUpSection .content h1 {
+    font-weight: 500;
+    font-size: 40px;
+    font-family: "Popins", sans-serif;
+}
+
+.signUpSection .content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+
+.signUpSection .content p span {
+    padding-left: 12px;
+}
+
+.signUpSection .mainImage img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.signByGoogle {
+    display: flex;
+    border: 1px solid #ddd;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 4px;
+    transition: 0.3s all ease-in-out;
+
+}
+
+.signByGoogle:hover {
+    scale: 1.1;
+}
+
+.signByGoogle:active {
+    scale: 1;
+}
+
+.signUpSection .signByGoogle .imageGoogle {
+    width: 40px;
+    height: 40px;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+.content .inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    font-family: "Poppins",sans-serif;
+        font-weight: 400;
+    font-size: 16px;
+}
+
+.content {
+    flex-grow: 1;
+    font-family: "Poppins",sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.content .inputs input,
+select {
+    padding: 20px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    border-width: 2px;
+    background-color: transparent;
+    text-align: left;
+    padding-left: 0;
+    transition: 0.3s ease-in-out;
+    font-family: "Poppins" ,sans-serif;
+    
+}
+
+.content .inputs input::placeholder {
+    margin-bottom: 0px;
+    font-family: "Poppins",sans-serif;
+        font-weight: 400;
+    font-size: 16px;
+}
+
+.content .inputs input:focus,
+select:focus {
+    border-width: 1px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #000000c8;
+}
+
+.submitBtn {
+    padding: 15px;
+    border: 1px solid #ddd;
+    position: relative;
+    border-radius: 4px;
+    background-color: #db4444;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 50px;
+    margin-bottom: 5px;
+    transition: 0.3s all ease-in-out;
+}
+.submit button{
+    box-sizing: border-box;
+    padding: 20px 50px;
+    
+}
+
+select {
+    border-color: #ddd;
+}
+
+.forget *{
+    padding-left: 40%;
+    color: var(--main-button-color);
+}
+
+.submitBtn:hover {
+    scale: 1.1;
+}
+
+.submitBtn:active {
+    scale: 1;
+}
+
+span a {
+    text-decoration: underline;
+    color: #000000;
+}
+
+/* ----------------------- Responsive design ------------------ */
+
+/* phone  */
+@media(max-width:480px){
+    .signUpSection{
+        flex-direction: column;
+        margin-right: 0;
+        gap: 0;
+    }
+    .content{
+        padding: 0px;
+        flex-grow: 0;
+    }
+    .content h1{
+        font-weight: normal;
+        font-size: 5px;
+    }
+    
+}
+/* tablet  */
+@media(max-width:1024px){
+    .signUpSection{
+        flex-direction: column;
+        margin-right: 0;
+        gap: 0;
+    }
+    .content{
+        padding: 30px;
+        flex-grow: 0;
+    }
+    
+}
+/* standard desktop */
+@media(max-width:1440px){
+    
+    
+}
+/* large desktop */
+@media(min-width:1441px){
+   
+    
+}
